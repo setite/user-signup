@@ -71,13 +71,13 @@ def signup_complete():
     error_required      = "This is a required field"
     error_pw_reenter    = "Please re-enter password"
     error_char_count    = "must be between 3 and 20 characters"
-    error_spaces        = "must contain spaces"
+    error_spaces        = "must contain NO spaces"
     
     # create variables from the forms
 
     username            = request.form['username']
     password            = request.form['password']
-    password_verify   = request.form['password_verify']
+    password_verify     = request.form['password_verify']
     email               = request.form['email']
 
     # password validation nested conditionals
